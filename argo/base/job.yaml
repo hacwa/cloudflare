@@ -17,11 +17,14 @@ spec:
             - |
               apk add --no-cache git bash curl jq openssh &&
               git config --global credential.helper "" &&
-              GIT_TERMINAL_PROMPT=0 git clone https://github.com/hacwa/cloudflare.git /workspace &&
+              git config --global --add url."git@github.com:".insteadOf "https://github.com/" &&
+              git clone https://github.com/hacwa/cloudflare.git /workspace &&
               cd /workspace/terraform &&
               terraform init &&
               terraform apply -auto-approve
           env:
+            - name: GIT_TERMINAL_PROMPT
+              value: "0"
             - name: TF_VAR_cloudflare_api_token
               valueFrom:
                 secretKeyRef:
