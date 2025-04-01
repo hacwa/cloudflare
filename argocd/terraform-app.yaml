@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/hacwa/cloudflare-argo-tf
+    repoURL: https://github.com/hacwa/cloudflare
     targetRevision: HEAD
     path: argo/base
   syncPolicy:

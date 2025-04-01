@@ -8,7 +8,7 @@ spec:
   template:
     spec:
       restartPolicy: Never
-      serviceAccountName: argo-argo-workflows-workflow-controller
+      serviceAccountName: default
       containers:
         - name: terraform
           image: hashicorp/terraform:light
@@ -16,7 +16,8 @@ spec:
           args:
             - |
               apk add --no-cache git bash curl jq openssh &&
-              git clone https://github.com/hacwa/cloudflare-argo-tf /workspace &&
+              git config --global credential.helper "" &&
+              git clone https://github.com/hacwa/cloudflare /workspace &&
               cd /workspace/terraform &&
               terraform init &&
               terraform apply -auto-approve
