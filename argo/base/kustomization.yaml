@@ -1,2 +1,8 @@
 resources:
   - job.yaml
+configMapGenerator:
+  - name: tf-hash
+    files:
+      - ../../terraform/main.tf
+generatorOptions:
+  disableNameSuffixHash: true
