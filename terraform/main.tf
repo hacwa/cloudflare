@@ -26,7 +26,7 @@ resource "cloudflare_dns_record" "vip1_hacwa_co_uk" {
   name    = "vip1.hacwa.co.uk."
   type    = "A"
   content = "185.137.223.79"
-  ttl     = 60
+  ttl     = 120
   proxied = false
 }
 
