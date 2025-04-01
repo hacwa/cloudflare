@@ -193,6 +193,14 @@ resource "cloudflare_dns_record" "nextcloud_hacwa_co_uk" {
   proxied = false
 }
 
+resource "cloudflare_dns_record" "argo_events_hacwa_co_uk" {
+  zone_id = "19cf385e2fe2d7760da58d3b795efe35"
+  name    = "events.hacwa.co.uk."
+  type    = "CNAME"
+  content = "vip1.hacwa.co.uk."
+  ttl     = 60
+  proxied = false
+}
 
 resource "cloudflare_dns_record" "paste_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
