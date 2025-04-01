@@ -17,7 +17,7 @@ spec:
             - |
               apk add --no-cache git bash curl jq openssh &&
               git config --global credential.helper "" &&
-              GIT_TERMINAL_PROMPT=0 git clone https://github.com/hacwa/cloudflare-argo-tf.git /workspace &&
+              GIT_TERMINAL_PROMPT=0 git clone https://github.com/hacwa/cloudflare.git /workspace &&
               cd /workspace/terraform &&
               terraform init &&
               terraform apply -auto-approve
