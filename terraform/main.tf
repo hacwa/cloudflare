@@ -44,7 +44,7 @@ resource "cloudflare_dns_record" "argocd_hacwa_co_uk" {
   name    = "argocd.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 1
+  ttl     = 60
   proxied = false
 }
 
@@ -180,7 +180,7 @@ resource "cloudflare_dns_record" "matrix_hacwa_co_uk" {
   name    = "matrix.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 120
+  ttl     = 60
   proxied = false
 }
 
@@ -189,7 +189,7 @@ resource "cloudflare_dns_record" "nextcloud_hacwa_co_uk" {
   name    = "nextcloud.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 120
+  ttl     = 60
   proxied = false
 }
 
@@ -198,7 +198,7 @@ resource "cloudflare_dns_record" "argo_events_hacwa_co_uk" {
   name    = "events.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 240
+  ttl     = 60
   proxied = false
 }
 
