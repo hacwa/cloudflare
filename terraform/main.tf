@@ -189,7 +189,7 @@ resource "cloudflare_dns_record" "nextcloud_hacwa_co_uk" {
   name    = "nextcloud.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 60
+  ttl     = 120
   proxied = false
 }
 
