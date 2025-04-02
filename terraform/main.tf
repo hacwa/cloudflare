@@ -198,7 +198,7 @@ resource "cloudflare_dns_record" "argo_events_hacwa_co_uk" {
   name    = "events.hacwa.co.uk."
   type    = "CNAME"
   content = "vip1.hacwa.co.uk."
-  ttl     = 60
+  ttl     = 120
   proxied = false
 }
 

@@ -4,7 +4,6 @@ metadata:
   name: terraform-dns
   namespace: argo
   annotations:
-    hacwa.io/hash: "{{ .HASH }}"
 spec:
   backoffLimit: 0
   template:
