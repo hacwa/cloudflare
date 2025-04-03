@@ -16,7 +16,7 @@ resource "cloudflare_dns_record" "element_hacwa_co_uk" {
   name    = "element.hacwa.co.uk."
   type    = "A"
   content = "185.137.223.79"
-  ttl     = 120
+  ttl     = 60
   proxied = false
 }
 
