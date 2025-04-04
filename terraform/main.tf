@@ -30,6 +30,15 @@ resource "cloudflare_dns_record" "vip1_hacwa_co_uk" {
   proxied = false
 }
 
+resource "cloudflare_dns_record" "vip2_hacwa_co_uk" {
+  zone_id = "19cf385e2fe2d7760da58d3b795efe35"
+  name    = "vip2.hacwa.co.uk."
+  type    = "A"
+  content = "82.68.55.14"
+  ttl     = 60
+  proxied = false
+}
+
 resource "cloudflare_dns_record" "anime_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "anime.hacwa.co.uk."
@@ -134,7 +143,7 @@ resource "cloudflare_dns_record" "jenkins_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "jenkins.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
