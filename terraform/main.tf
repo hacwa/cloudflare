@@ -43,7 +43,7 @@ resource "cloudflare_dns_record" "anime_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "anime.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -111,14 +111,6 @@ resource "cloudflare_dns_record" "fm3__domainkey_hacwa_co_uk" {
   proxied = false
 }
 
-resource "cloudflare_dns_record" "gotify_hacwa_co_uk" {
-  zone_id = "19cf385e2fe2d7760da58d3b795efe35"
-  name    = "gotify.hacwa.co.uk."
-  type    = "CNAME"
-  content = "vip14.hacwa.co.uk."
-  ttl     = 60
-  proxied = false
-}
 
 resource "cloudflare_dns_record" "grafana_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
@@ -170,19 +162,11 @@ resource "cloudflare_dns_record" "lidarr_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "lidarr.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
 
-resource "cloudflare_dns_record" "magicword_hacwa_co_uk" {
-  zone_id = "19cf385e2fe2d7760da58d3b795efe35"
-  name    = "magicword.hacwa.co.uk."
-  type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
-  ttl     = 60
-  proxied = false
-}
 
 resource "cloudflare_dns_record" "matrix_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
@@ -233,7 +217,7 @@ resource "cloudflare_dns_record" "radarr_4k_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "radarr-4k.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -242,7 +226,7 @@ resource "cloudflare_dns_record" "radarr_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "radarr.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -251,7 +235,7 @@ resource "cloudflare_dns_record" "report_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "report.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -260,7 +244,7 @@ resource "cloudflare_dns_record" "request_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "request.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -269,7 +253,7 @@ resource "cloudflare_dns_record" "sab_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "sab.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -278,7 +262,7 @@ resource "cloudflare_dns_record" "sonarr_4k_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "sonarr-4k.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -287,16 +271,7 @@ resource "cloudflare_dns_record" "sonarr_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "sonarr.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
-  ttl     = 60
-  proxied = false
-}
-
-resource "cloudflare_dns_record" "stats_hacwa_co_uk" {
-  zone_id = "19cf385e2fe2d7760da58d3b795efe35"
-  name    = "stats.hacwa.co.uk."
-  type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
@@ -314,7 +289,7 @@ resource "cloudflare_dns_record" "trivy_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "trivy.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
