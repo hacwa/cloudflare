@@ -161,7 +161,7 @@ resource "cloudflare_dns_record" "keycloak_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "keycloak.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip1.hacwa.co.uk."
+  content = "vip2.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
