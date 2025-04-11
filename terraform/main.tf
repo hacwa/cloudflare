@@ -15,7 +15,7 @@ resource "cloudflare_dns_record" "element_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "element.hacwa.co.uk."
   type    = "A"
-  content = "82.68.55.14"
+  content = "185.137.223.79"
   ttl     = 60
   proxied = false
 }
@@ -280,7 +280,7 @@ resource "cloudflare_dns_record" "synapse_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "synapse.hacwa.co.uk."
   type    = "CNAME"
-  content = "vip2.hacwa.co.uk."
+  content = "vip1.hacwa.co.uk."
   ttl     = 60
   proxied = false
 }
