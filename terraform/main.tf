@@ -15,7 +15,7 @@ resource "cloudflare_dns_record" "element_hacwa_co_uk" {
   zone_id = "19cf385e2fe2d7760da58d3b795efe35"
   name    = "element.hacwa.co.uk."
   type    = "A"
-  content = "185.137.223.79"
+  content = "82.68.55.14"
   ttl     = 60
   proxied = false
 }
